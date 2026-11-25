@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechTreasure | Latest Insights</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #080812;
+            color: #f5f3ff;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.7;
+        }
+
+        .container {
+            width: 88%;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        header {
+            padding: 30px 0;
+            border-bottom: 1px solid #302747;
+        }
+
+        .logo {
+            font-size: 26px;
+            font-weight: 800;
+            letter-spacing: 2px;
+        }
+
+        .logo span {
+            color: #a855f7;
+        }
+
+        .subtitle {
+            color: #8888a5;
+            font-size: 13px;
+            letter-spacing: 3px;
+        }
+
+        .intro {
+            padding: 75px 0 45px;
+        }
+
+        .intro small {
+            color: #22d3ee;
+            letter-spacing: 3px;
+        }
+
+        .intro h1 {
+            font-size: 55px;
+            margin: 15px 0;
+        }
+
+        .intro h1 span {
+            color: #a855f7;
+        }
+
+        .intro p {
+            color: #aaa9c2;
+            max-width: 650px;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            padding-bottom: 70px;
+        }
+
+        .post {
+            background: #131222;
+            border: 1px solid #302747;
+            border-radius: 15px;
+            padding: 30px;
+            transition: 0.3s;
+        }
+
+        .post:hover {
+            border-color: #a855f7;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px #9333ea22;
+        }
+
+        .category {
+            color: #22d3ee;
+            font-size: 12px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .post h2 {
+            font-size: 23px;
+            margin: 15px 0;
+        }
+
+        .post p {
+            color: #aaa9c2;
+            font-size: 15px;
+        }
+
+        footer {
+            border-top: 1px solid #302747;
+            text-align: center;
+            padding: 30px;
+            color: #8888a5;
+        }
+
+        footer span {
+            color: #a855f7;
+        }
+
+        @media (max-width: 700px) {
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">TECH<span>TREASURE.</span></div>
+            <div class="subtitle">TECHNOLOGY • INNOVATION • FUTURE</div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="intro">
+            <small>THE DIGITAL JOURNAL</small>
+            <h1>Latest <span>Insights.</span></h1>
+
+            <p>
+                Explore ideas, discoveries, and perspectives
+                from the ever-changing world of technology.
+                Discover what comes next.
+            </p>
+        </section>
+
+        <section class="blog-grid">
+
+            <article class="post">
+                <div class="category">Artificial Intelligence</div>
+                <h2>How AI Is Reshaping Our Future</h2>
+                <p>
+                    Artificial intelligence is transforming
+                    industries through automation, smart
+                    assistants, and advanced problem-solving.
+                </p>
+            </article>
+
+            <article class="post">
+                <div class="category">Cybersecurity</div>
+                <h2>Staying Safe in a Digital World</h2>
+                <p>
+                    Learn how strong passwords, secure networks,
+                    and digital awareness help protect personal
+                    information from online threats.
+                </p>
+            </article>
+
+            <article class="post">
+                <div class="category">Future Technology</div>
+                <h2>The Next Generation of Smart Devices</h2>
+                <p>
+                    Smart devices are changing our daily lives
+                    by making homes, workplaces, and everyday
+                    activities more connected.
+                </p>
+            </article>
+
+            <article class="post">
+                <div class="category">Digital Innovation</div>
+                <h2>Why Technology Never Stops Evolving</h2>
+                <p>
+                    New discoveries encourage creativity,
+                    improve existing systems, and open doors
+                    to exciting possibilities.
+                </p>
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+        © 2026 <span>TechTreasure</span> | Beyond the Ordinary.
+    </footer>
+
+</body>
+</html>
