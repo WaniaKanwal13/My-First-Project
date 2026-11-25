@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TechTreasure | Beyond the Future</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #080812;
+            color: #f5f3ff;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Background Effects */
+        body::before {
+            content: "";
+            position: fixed;
+            width: 500px;
+            height: 500px;
+            background: #7c3aed;
+            filter: blur(180px);
+            opacity: 0.15;
+            top: -150px;
+            left: -150px;
+            z-index: -1;
+        }
+
+        .container {
+            width: 88%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* Logo and Header */
+        header {
+            padding: 30px 0;
+            border-bottom: 1px solid #29243d;
+        }
+
+        .logo {
+            font-size: 26px;
+            font-weight: 800;
+            letter-spacing: 2px;
+        }
+
+        .logo span {
+            color: #a855f7;
+        }
+
+        .tagline {
+            color: #8b8ba7;
+            font-size: 13px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-top: 4px;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 110px 0 90px;
+            max-width: 850px;
+        }
+
+        .label {
+            display: inline-block;
+            color: #22d3ee;
+            border: 1px solid #164e63;
+            background: #08334455;
+            padding: 7px 16px;
+            border-radius: 30px;
+            font-size: 12px;
+            letter-spacing: 2px;
+            margin-bottom: 25px;
+        }
+
+        .hero h1 {
+            font-size: clamp(42px, 7vw, 76px);
+            line-height: 1.1;
+            margin-bottom: 25px;
+        }
+
+        .hero h1 span {
+            background: linear-gradient(90deg, #a855f7, #22d3ee);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .hero p {
+            color: #aaa9c2;
+            font-size: 18px;
+            max-width: 650px;
+            margin-bottom: 35px;
+        }
+
+        .hero-button {
+            display: inline-block;
+            padding: 13px 25px;
+            background: linear-gradient(90deg, #9333ea, #2563eb);
+            color: white;
+            text-decoration: none;
+            border-radius: 7px;
+            font-weight: bold;
+            box-shadow: 0 0 25px #9333ea55;
+        }
+
+        /* Featured Section */
+        .section-title {
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+
+        .section-title span {
+            color: #22d3ee;
+        }
+
+        .articles {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+            padding-bottom: 80px;
+        }
+
+        .card {
+            background: linear-gradient(145deg, #171528, #0e0d1b);
+            border: 1px solid #302747;
+            border-radius: 14px;
+            padding: 28px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+            border-color: #a855f7;
+            box-shadow: 0 10px 35px #9333ea22;
+        }
+
+        .card-number {
+            color: #a855f7;
+            font-size: 13px;
+            letter-spacing: 2px;
+            margin-bottom: 18px;
+        }
+
+        .card h3 {
+            font-size: 21px;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #9998b2;
+            font-size: 14px;
+        }
+
+        .category {
+            display: inline-block;
+            color: #22d3ee;
+            font-size: 11px;
+            letter-spacing: 1px;
+            margin-top: 22px;
+            text-transform: uppercase;
+        }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid #29243d;
+            padding: 30px 0;
+            text-align: center;
+            color: #77768e;
+            font-size: 13px;
+        }
+
+        footer span {
+            color: #a855f7;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 800px) {
+            .articles {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                padding: 75px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">TECH<span>TREASURE.</span></div>
+            <div class="tagline">Technology • Innovation • Future</div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="hero">
+            <div class="label">● THE FUTURE STARTS HERE</div>
+
+            <h1>
+                Explore Beyond
+                <span>Technology.</span>
+            </h1>
+
+            <p>
+                Welcome to TechTreasure, your digital destination
+                for discovering emerging technologies, intelligent
+                innovations, futuristic gadgets, and the ideas
+                transforming our world.
+            </p>
+
+            <a href="blog.html" class="hero-button">
+                Explore Our Articles →
+            </a>
+        </section>
+
+        <section>
+            <h2 class="section-title">
+                Explore <span>Our Universe</span>
+            </h2>
+
+            <div class="articles">
+
+                <article class="card">
+                    <div class="card-number">01 / ARTIFICIAL INTELLIGENCE</div>
+                    <h3>The Rise of AI</h3>
+                    <p>
+                        Discover how artificial intelligence is
+                        transforming industries, improving lives,
+                        and shaping tomorrow.
+                    </p>
+                    <div class="category">Future Intelligence ↗</div>
+                </article>
+
+                <article class="card">
+                    <div class="card-number">02 / DIGITAL INNOVATION</div>
+                    <h3>Next-Gen Gadgets</h3>
+                    <p>
+                        Explore the latest smart devices, futuristic
+                        technology, and innovations changing
+                        everyday experiences.
+                    </p>
+                    <div class="category">Tech Discoveries ↗</div>
+                </article>
+
+                <article class="card">
+                    <div class="card-number">03 / CYBER WORLD</div>
+                    <h3>Inside Cybersecurity</h3>
+                    <p>
+                        Learn about digital privacy, online security,
+                        and the technologies protecting our
+                        connected world.
+                    </p>
+                    <div class="category">Digital Protection ↗</div>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        © 2026 <span>TechTreasure</span>. Exploring the future, one
+        innovation at a time.
+    </footer>
+
+</body>
+</html>
